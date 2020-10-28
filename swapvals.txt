@@ -1,0 +1,20 @@
+1. False # covid treatment
+2. False # origin of corona
+3. True # covid impact on NBA games
+4. True # schools refund fees due to covid-19
+5. False # covid impact on children
+6. True # small businesses getting money from government
+7. False # is corona an STI
+8. True # are restaurants safe when reopened
+9. False # can corona spread through groceries
+10. True # is wearing mask mandatory
+11. True # end of the pandemic
+12. False # is corona seasonal
+13. True # covid cloth mask effectiveness
+14. False # is coronavirus curable
+15. True # travel restrictions coronavirus
+16. False # coronavirus dies in sunlight
+17. True # USA economy reopening plan
+18. True # how long it takes to recover from covid
+19. True # covid treatment cost in USA
+20. False # corona vaccine release
