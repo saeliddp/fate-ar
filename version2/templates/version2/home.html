@@ -271,18 +271,18 @@
         }
     </style>
 
-    <title>Google or Not?</title>
+    <title>قوقل أو لا؟</title>
 
 </head>
 
 <body style="background-color: #f2f2f2">
 
 <div class="top">
-    <h1 class="header">Google or Not?</h1>
+    <h1 class="header">قوقل أو لا؟</h1>
 
     <!-- Sets up the Query bar -->
     <div class="main_divs">
-        <p class="query" id="qstring">Search: {{ query_name }}</p>
+        <p style="text-align: right;" class="query" id="qstring">البحث {{ query_name }}</p>
     </div>
     <div id="myProgress">
         <div id="myBar"></div>
@@ -335,7 +335,7 @@
         <!-- Sets up the submit button -->
         <div class="main_divs">
             <div style="text-align: center" class="submit">
-                <input type="submit" value="Next" class="button" id="submit_button" disabled>
+                <input type="submit" value="التالي" class="button" id="submit_button" disabled>
                 <p class="timer" id="remaining">{{ curr_qid }}</p>
 
             </div>
@@ -373,7 +373,7 @@
             document.getElementById("submit_button").disabled = false;
         }
     }
-    document.getElementById("remaining").innerHTML = "Question " + (21 - rem).toString() + "/20";
+    document.getElementById("remaining").innerHTML = "" + (21 - rem).toString() + "/20";
     updateSeconds();
     setInterval(updateSeconds, 1000);
 </script>

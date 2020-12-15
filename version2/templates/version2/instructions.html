@@ -242,28 +242,26 @@
     <img id="logo" src="{% static 'myapp/google_or_not.png' %}" alt="1">
     <p></p>
     <img id="logo2" src="{% static 'myapp/uw_lab.png' %}" alt="1">
-    <div class="rules">
-        <h2>How to Play:</h2>
-        <div class="paragraph">
-            <img class="index" src="{% static 'myapp/1.png' %}" alt="1">
-            <text><span style="color: #2F80ED; font-weight: bold">Guess which is from Google!</span><br>
-                You will be shown <span style="color: #2F80ED; ">two sets</span> of results for each search term. You
-                will
-                have <span style="color: #2F80ED; ">30 seconds</span>.
-            </text>
-        </div>
-        <div class="paragraph">
-            <img class="index" src="{% static 'myapp/2.png' %}" alt="2">
-            <text>For being <span style="color: #27AE60; ">right, +10 points.</span><br>
-                For being <span style="color: #EB5757; ">wrong, -5 points.</span><br>
-                <span style="color: #F2994A; ">No answer, 0 point.</span>
-        </div>
-        <div class="paragraph">
-            <img class="index" src="{% static 'myapp/3.png' %}" alt="3">
-            <text>There will be <span style="color: #2F80ED; ">20 rounds</span>.
-                You will get a <span style="color: #2F80ED; ">badge</span> after finished the game.<br>
-                <span style="color: #2F80ED; ">Good luck!</span></text>
-            <br>
+        <div class="rules">
+            <div class="paragraph">
+                <img class="index" src="{% static 'myapp/1.png' %}" alt="1">
+                <text><span style="color: #2F80ED; font-weight: bold; direction: rtl;">خمن النتائج التي من قوقل</span><br>
+                    سوف تظهر لك <span style="color: #2F80ED; ">واجهتان</span> من نتائج البحث في كل جولة
+                   <span style="color: #2F80ED; ">30 ثانية</span>
+                </text>
+            </div>
+            <div class="paragraph">
+                <img class="index" src="{% static 'myapp/2.png' %}" alt="2">
+                <text>إذا كانت الإجابة <span style="color: #27AE60; direction: rtl; ">صحيحة ستحصل على 10 نقاط </span><br>
+                    إذا كانت الإجابة <span style="color: #EB5757; direction: rtl; ">خاطئة سيتم خصم 5 نقاط </span><br>
+                    <span style="color: #F2994A; direction: rtl; "> إذا لم يتم الإجابة سيتم إحتساب 0 نقاط </span>
+            </div>
+            <div class="paragraph">
+                <img class="index" src="{% static 'myapp/3.png' %}" alt="3">
+                <text>سيكون هناك <span style="color: #2F80ED; direction: rtl; ">20 جولة</span>.
+                   بعد الإنتهاء ستظهر <span style="color: #2F80ED; direction: rtl; "> علامة </span>تظهر المستوى الذي تم تحقيقه<br>
+                    <span style="color: #2F80ED; direction: rtl; ">حظاً طيباً</span></text>
+                <br>
         </div>
         <div class="paragraph badges">
             <img class="badge" src="{% static 'myapp/eaglebadge1.png' %}">
@@ -283,7 +281,7 @@
 
     <h3></h3>
     <div class="legal">
-        {#        <h2>The Legal Stuff:</h2>#}
+        {#        <h2>The Legal Stuff</h2>#}
         {#        <p>This game has been explained to me. I have had a chance to ask questions. If I have questions later about#}
         {#            this#}
         {#            game, or if I have been harmed by participating in it, I can contact Dr. Chirag Shah (chirags@uw.edu). If I#}
@@ -291,16 +289,17 @@
         {#            questions about my rights as a participant, I can call the Human Subjects Division at (206) 543-0098 or call#}
         {#            collect at (206) 221-5940.#}
         {#        </p>#}
-        <button type="button" class="collapsible"><u>The Legal Stuff</u><img id="polygon"
+        <button type="button" class="collapsible"><u>الأمور القانونية</u><img id="polygon"
                                                                              src="{% static 'myapp/Polygon.png' %}">
         </button>
         <div class="content">
-            <p>This game has been explained to me. I have had a chance to ask questions. If I have questions later about
-                this game, or if I have been harmed by participating in it, I can contact Dr. Chirag Shah
-                (chirags@uw.edu). If I
-                have questions about my rights as a participant, I can call the Human Subjects Division at (206)
-                543-0098 or call
-                collect at (206) 221-5940.</p>
+            <p style="text-align: right;"> تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي</p>
+            <p style=>(chirags@uw.edu)</p>
+            <p style="text-align: right;">تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي:
+            أو يمكنكم الاتصال بقسم الموضوعات البشرية على الارقام التالية </p>
+        <p>+1-206-543-0098
+           +1-5940-221-206
+                </p>
         </div>
     </div>
     <div class="agree" style="text-align: center; ">
