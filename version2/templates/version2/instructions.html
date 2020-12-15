@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 <head>
     <style>
 
@@ -224,7 +224,7 @@
         }
     </style>
     <title>Google or Not?</title>
-
+	<meta charset="UTF-8">
     <meta property="og:url" content="https://shielded-tundra-32718.herokuapp.com"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Google or Not?"/>
@@ -239,29 +239,32 @@
 <div class="block">
     {% load staticfiles %}
     {#    <h1 class="header header1">Google or Not?</h1>#}
-    <img id="logo" src="{% static 'myapp/google_or_not.png' %}" alt="1">
+    <img id="logo" src="{% static 'myapp/google_or_not.png' %}" alt="1"; style="float: left">
+    <img id="logo2" src="{% static 'myapp/uw_lab.png' %}" alt="1"; style="float: left">
     <p></p>
-    <img id="logo2" src="{% static 'myapp/uw_lab.png' %}" alt="1">
-        <div class="rules">
-            <div class="paragraph">
-                <img class="index" src="{% static 'myapp/1.png' %}" alt="1">
-                <text><span style="color: #2F80ED; font-weight: bold; direction: rtl;">خمن النتائج التي من قوقل</span><br>
-                    سوف تظهر لك <span style="color: #2F80ED; ">واجهتان</span> من نتائج البحث في كل جولة
-                   <span style="color: #2F80ED; ">30 ثانية</span>
-                </text>
-            </div>
-            <div class="paragraph">
-                <img class="index" src="{% static 'myapp/2.png' %}" alt="2">
-                <text>إذا كانت الإجابة <span style="color: #27AE60; direction: rtl; ">صحيحة ستحصل على 10 نقاط </span><br>
-                    إذا كانت الإجابة <span style="color: #EB5757; direction: rtl; ">خاطئة سيتم خصم 5 نقاط </span><br>
-                    <span style="color: #F2994A; direction: rtl; "> إذا لم يتم الإجابة سيتم إحتساب 0 نقاط </span>
-            </div>
-            <div class="paragraph">
-                <img class="index" src="{% static 'myapp/3.png' %}" alt="3">
-                <text>سيكون هناك <span style="color: #2F80ED; direction: rtl; ">20 جولة</span>.
-                   بعد الإنتهاء ستظهر <span style="color: #2F80ED; direction: rtl; "> علامة </span>تظهر المستوى الذي تم تحقيقه<br>
-                    <span style="color: #2F80ED; direction: rtl; ">حظاً طيباً</span></text>
-                <br>
+    <img id="logo2" src="" alt="1">
+    <p></p>
+    <div class="rules">
+        <h2>كيف تستخدم النظام</h2>
+        <div class="paragraph">
+            <img class="index" src="{% static 'myapp/1.png' %}" alt="1">
+            <text><span style="color: #2F80ED; font-weight: bold; direction: rtl;">خمن النتائج التي من قوقل</span><br>
+                سوف تظهر لك <span style="color: #2F80ED; ">واجهتان</span> من نتائج البحث في كل جولة
+               <span style="color: #2F80ED; ">30 ثانية</span>
+            </text>
+        </div>
+        <div class="paragraph">
+            <img class="index" src="{% static 'myapp/2.png' %}" alt="2">
+            <text>إذا كانت الإجابة <span style="color: #27AE60; direction: rtl; ">صحيحة ستحصل على 10 نقاط </span><br>
+                إذا كانت الإجابة <span style="color: #EB5757; direction: rtl; ">خاطئة سيتم خصم 5 نقاط </span><br>
+                <span style="color: #F2994A; direction: rtl; "> إذا لم يتم الإجابة سيتم إحتساب 0 نقاط </span>
+        </div>
+        <div class="paragraph">
+            <img class="index" src="{% static 'myapp/3.png' %}" alt="3">
+            <text>سيكون هناك <span style="color: #2F80ED; direction: rtl; ">20 جولة</span>.
+               بعد الإنتهاء ستظهر <span style="color: #2F80ED; direction: rtl; "> علامة </span>تظهر المستوى الذي تم تحقيقه<br>
+                <span style="color: #2F80ED; direction: rtl; ">حظاً طيباً</span></text>
+            <br>
         </div>
         <div class="paragraph badges">
             <img class="badge" src="{% static 'myapp/eaglebadge1.png' %}">
@@ -293,12 +296,12 @@
                                                                              src="{% static 'myapp/Polygon.png' %}">
         </button>
         <div class="content">
-            <p style="text-align: right;"> تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي</p>
-            <p style=>(chirags@uw.edu)</p>
-            <p style="text-align: right;">تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي:
-            أو يمكنكم الاتصال بقسم الموضوعات البشرية على الارقام التالية </p>
-        <p>+1-206-543-0098
-           +1-5940-221-206
+            <p style="direction: rtl;">تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي:</p>
+            <p style="direction: ltr;">(chirags@uw.edu)</p>
+            <p style="direction: rtl;">تم شرح الأمور المتعلقة بالنظام، إذا كان لديكم أي أسئلة لاحقًا حول اللعبة، أو أسئلة حول الحقوق كمشارك، أو إذا تم التعرض للأذى من خلال المشاركة فيها, فيمكنكم التواصل بالدكتور شيراق شاه على البريد الإلكتروني التالي:
+                أو يمكنكم الاتصال بقسم الموضوعات البشرية على الارقام التالية 
+                +1-206-543-0098 
+                + 1-5940-221-206
                 </p>
         </div>
     </div>
