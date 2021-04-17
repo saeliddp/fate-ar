@@ -1,5 +1,6 @@
-from classes.snippet import *
+from snippet import *
 import pickle
+import urllib
 
 # splits the DOCUMENT# by the middle '00' to get qid and r
 def splitByDoubleZeros(doc_num):
@@ -49,7 +50,7 @@ def extractFromFile(file_name, num_snippets):
     lines = file.readlines()
     file.close()
     
-    with open("./version2/snippet.pickle", 'rb') as fr:
+    with open("./version2/snippet3.pickle", 'rb') as fr:
         query_snippet_list = pickle.load(fr)
         
     results = {}
@@ -88,7 +89,8 @@ def extractFromFile(file_name, num_snippets):
             # [query_name, title, url, description]
             # replaces double quotes with single quotes
             results[qid].append([query_snippet.query.replace('"', "'"), curr_snippet.get_title().replace('"', "'"), 
-                                curr_snippet.get_url().replace('"', "'"), curr_snippet.get_desc().replace('"', "'")])
+                                urllib.parse.unquote(curr_snippet.get_url().replace('"', "'")), 
+                                curr_snippet.get_desc().replace('"', "'")])
                                 
             snippets_added += 1
             
